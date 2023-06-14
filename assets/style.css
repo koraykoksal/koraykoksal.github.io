@@ -145,6 +145,10 @@ img{
 .learnMore{
     padding: 15px;
 }
+
+.learnMore a{
+    margin: auto;
+}
 .learnMore input{
 
     align-items: center;
@@ -160,4 +164,22 @@ img{
 
 .learnMore input:hover{
     border: 1px solid #bebe;
+}
+
+
+/* project page */
+
+
+#projectCard{
+
+    background-color: #017156;
+
+}
+
+#accordion{
+    margin-top: 50px;
+}
+
+#accordion img{
+    object-fit: contain;
 }
