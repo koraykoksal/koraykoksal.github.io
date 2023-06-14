@@ -18,75 +18,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&amp;display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
 </head>
-<body>
+<body style="background-color: #017156;">
     
-    
-
-    <head>
-        <h1 id="top">KORAY KOKSAL</h1>
-    </head>
 
 
-    <br>
+    <header>
+        <h1 id="myname">KORAY KOKSAL</h1>
+    </header>
 
-    <nav class="top-nav">
+
+    <div class="row nav">
         <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
         <a href="#about"><i class="fa-solid fa-address-card"></i> About</a>
         <a href="#project"><i class="fa-solid fa-list-check"></i> Project</a>
         <a href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a>
-    </nav>
-
-    <br>
-
-    <main>
-        <article id="about">
-            <p>Hi there <span>👋</span> Koray KÖKSAL here! I'm a FullStack Developer. I love coding... </p>
-        </article>
-
-        <article id="project">
-            <h3 class="project-header">My Project</h3>
-
-            <div>
-                <img src="csharp.jpg" alt="c#">
-                <img src="python.jpg" alt="Python">
-                <img src="react.jpg" alt="React">
-            </div>
-        </article>
-    </main>
-
-
-    <footer id="contact">
-        <h3 class="contact-me">Contact Me</h3>
-        <nav class="bottom-nav">
-            <a href="https://github.com/koraykoksal" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/koraykoksall/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-            <a href="https://www.instagram.com/iamkoraykoksal/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-        </nav>
-        <h4 class="msg">Send Message</h4>
-
-        <form action="">
-
-            <input type="text" name="" id="" placeholder="Name">
-            <br>
-            <input type="email" name="" id="" placeholder="Email">
-            <br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <br>
-            <button type="submit" class="btn">Send</button>
-        </form>
-
-        <audio src="" autoplay>
-        
-        </audio>
-        
-    </footer>
-
-    <div class="go_top">
-        <a href="#top"><i class="fa-solid fa-up-long"></i></a>
     </div>
 
+    <div class="container">
+
+        <div class="row about" id="about">
+            <h4 class="aboutMe">Hi there <span>👋</span> Koray KÖKSAL here! I'm a FullStack Developer. I love coding...</h4>
+        </div>
+
+
+
+        <div class="row projectText" id="project">
+            <h4>My Projects</h4>
+        </div>
+
+        <div class="row myprojects">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/digital.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Digital Transformation</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/software.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Software Development</h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/systems.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>System Development</h1>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row learnMore">
+            <input type="button" value="Learn More">
+        </div>
+    </div>
+
+
+    <div class="container contact" id="contact">
+
+        <div class="row">
+            <h4 class="contactMe">Contact Me</h4>
+        </div>
+
+        <div class="row contact_links">
+            <div class="col">
+                <a href="https://github.com/koraykoksal" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+            <div class="col">
+                <a href="https://www.linkedin.com/in/koraykoksall/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            </div>
+            <div class="col">
+                <a href="https://www.instagram.com/iamkoraykoksal/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
